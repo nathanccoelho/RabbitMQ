@@ -22,8 +22,8 @@ public class EstoqueController {
 	
 	
 	@PutMapping
-	private ResponseEntity alteraEstoque(@RequestBody EstoqueDto estoqueDto){
+	private ResponseEntity<Object> alteraEstoque(@RequestBody EstoqueDto estoqueDto){
 		this.rabbitService.enviaMensagem(RabbitmqConstantes.FILA_ESTOQUE, estoqueDto);
-		return new ResponseEntity(HttpStatus.OK);
+		return new ResponseEntity<Object>(HttpStatus.OK);
 	}
 }

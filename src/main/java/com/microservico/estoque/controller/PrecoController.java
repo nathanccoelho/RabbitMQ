@@ -22,8 +22,8 @@ public class PrecoController {
 	
 	
 	@PutMapping
-	private ResponseEntity alteraPreco(@RequestBody PrecoDto precoDto){
+	private ResponseEntity<Object> alteraPreco(@RequestBody PrecoDto precoDto){
 		this.rabbitService.enviaMensagem(RabbitmqConstantes.FILA_PRECO, precoDto);
-		return new ResponseEntity(HttpStatus.OK);
+		return new ResponseEntity<Object>(HttpStatus.OK);
 	}
 }
