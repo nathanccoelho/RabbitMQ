@@ -1,4 +1,4 @@
-package constantes;
+package com.microservico.estoque.constantes;
 
 public class RabbitmqConstantes {
 	

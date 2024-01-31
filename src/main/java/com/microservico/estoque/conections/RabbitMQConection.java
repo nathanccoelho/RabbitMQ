@@ -1,4 +1,4 @@
-package conections;
+package com.microservico.estoque.conections;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
@@ -6,7 +6,7 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.stereotype.Component;
 
-import constantes.RabbitmqConstantes;
+import com.microservico.estoque.constantes.RabbitmqConstantes;
 
 @Component
 public class RabbitMQConection {
