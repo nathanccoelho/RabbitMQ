@@ -1,0 +1,12 @@
+package com.microservico.consumidorestoque.consumer;
+
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
+
+public class EstoqueConsumer {
+	
+	@RabbitListener(queues = )
+	private void consumidor() {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.microservico.consumidorestoque.consumer;
+
+public class EstoqueConsumer {
+
+}

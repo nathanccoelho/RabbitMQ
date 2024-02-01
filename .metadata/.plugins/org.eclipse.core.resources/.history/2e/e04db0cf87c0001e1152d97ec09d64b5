@@ -1,0 +1,5 @@
+package com.microservico.estoque.service;
+
+public class RabbitmqService {
+
+}
